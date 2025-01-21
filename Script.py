@@ -47,7 +47,7 @@ class script(object):
     SUBSCRIPTION_TXT = """
 <b>ʀᴇғᴇʀʀᴇ ʏᴏᴜʀ ʟɪɴᴋ ᴛᴏ ʏᴏᴜʀ ғʀɪᴇɴᴅs, ғᴀᴍɪʟʏ, ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ғʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ғᴏʀ {}
 
-ʀᴇғᴇʀᴀʟ ʟɪɴᴋ - https://telegram.me/{}?start=VJ-{}
+ʀᴇғᴇʀᴀʟ ʟɪɴᴋ - https://telegram.me/{}?start=TV show-{}
 
 ɪғ {} ᴜɴɪǫᴜᴇ ᴜsᴇʀ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜ ʏᴏᴜʀ ʀᴇғᴇʀᴀʟ ʟɪɴᴋ ᴛʜᴇɴ ʏᴏᴜ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴀᴅᴅᴇᴅ ɪɴ ᴘʀᴇᴍɪᴜᴍ ʟɪsᴛ.
 
@@ -247,7 +247,7 @@ Nᴀᴍᴇ - {}"""
 
     CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {file_name}
 
-<b>⚙️ sɪᴢᴇ : {file_size} \n<blockquote> 𝖩𝗈𝗂𝗇➥ 「<a href="https://t.me/tvshowbacki">𝗧𝘃 𝘀𝗵𝗼𝘄 𝙊𝙧𝙞𝙜𝙞𝙣𝙖𝙡𝙨</a>」</blockquote> </b>""" 
+<b>⚙️ sɪᴢᴇ : {file_size} \n\n<blockquote> 𝖩𝗈𝗂𝗇➥ 「<a href="https://t.me/tvshowbacki">𝗧𝘃 𝘀𝗵𝗼𝘄 𝙊𝙧𝙞𝙜𝙞𝙣𝙖𝙡𝙨</a>」</blockquote> </b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
