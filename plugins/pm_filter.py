@@ -1845,7 +1845,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [[
                 InlineKeyboardButton('༗🪈 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ༗🪈', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ 💵', callback_data="shortlink_info"),
+                InlineKeyboardButton('▶𝚈𝚘𝚞𝚝𝚞𝚋𝚎', url="https://youtube.com/@techbro-kd8yk"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 🎦', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
@@ -1859,7 +1859,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [[
                 InlineKeyboardButton('༗🪈 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ༗🪈', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ 💵', callback_data="shortlink_info"),
+                InlineKeyboardButton('▶𝚈𝚘𝚞𝚝𝚞𝚋𝚎', url="https://youtube.com/@techbro-kd8yk"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 🎦', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
@@ -1973,7 +1973,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🚩', url=GRP_LNK),
-            InlineKeyboardButton('▶𝚈𝚘𝚞𝚝𝚞𝚋𝚎', url="https://youtube.com/@techbro-kd8yk")
+            InlineKeyboardButton('🛍️ SHOPPING', url="https://www.instagram.com/gopalmadhav2024")
         ],[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
