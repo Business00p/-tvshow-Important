@@ -51,7 +51,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('༗🪈 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ༗🪈', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ 💵', callback_data="shortlink_info"),
+                InlineKeyboardButton('▶𝚈𝚘𝚞𝚝𝚞𝚋𝚎', url="https://youtube.com/@techbro-kd8yk"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 🎦', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ ⚙️.', callback_data='help'),
@@ -65,7 +65,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('༗🪈 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ༗🪈', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ 💵', callback_data="shortlink_info"),
+                InlineKeyboardButton('▶𝚈𝚘𝚞𝚝𝚞𝚋𝚎', url="https://youtube.com/@techbro-kd8yk"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 🎦', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
@@ -137,7 +137,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('༗🪈 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ༗🪈', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ 💵', callback_data="shortlink_info"),
+                InlineKeyboardButton('▶𝚈𝚘𝚞𝚝𝚞𝚋𝚎', url="https://youtube.com/@techbro-kd8yk"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 🎦', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
@@ -151,7 +151,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('༗🪈 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ༗🪈', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ 💵', callback_data="shortlink_info"),
+                InlineKeyboardButton('▶𝚈𝚘𝚞𝚝𝚞𝚋𝚎', url="https://youtube.com/@techbro-kd8yk"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 🎦', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
@@ -192,7 +192,7 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton('༗🪈 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ༗🪈', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ 💵', callback_data="shortlink_info"),
+                    InlineKeyboardButton('▶𝚈𝚘𝚞𝚝𝚞𝚋𝚎', url="https://youtube.com/@techbro-kd8yk"),
                     InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ  🎦', url=GRP_LNK)
                 ],[
                     InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
@@ -206,7 +206,7 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton('༗🪈 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ༗🪈', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ 💵', callback_data="shortlink_info"),
+                    InlineKeyboardButton('▶𝚈𝚘𝚞𝚝𝚞𝚋𝚎', url="https://youtube.com/@techbro-kd8yk"),
                     InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ  🎦', url=GRP_LNK)
                 ],[
                     InlineKeyboardButton('ʜᴇʟᴘ ⚙️', callback_data='help'),
@@ -453,8 +453,7 @@ async def start(client, message):
                         InlineKeyboardButton("♻️ ᴠᴇʀɪғʏ 🎭", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                     ],[
                         InlineKeyboardButton("🕵️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ❓", url=VERIFY_TUTORIAL)
-                    ],[InlineKeyboardButton("ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅs", callback_data="plan")
-                          ]]
+                    ]]
                           
                     text = "<b>ʜᴇʏ {} 👋, राधे राधे\n\nʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴠᴇʀɪғʏ & ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ᴛᴏᴅᴀʏ</b>"
                     if PREMIUM_AND_REFERAL_MODE == True:
@@ -518,8 +517,7 @@ async def start(client, message):
                         InlineKeyboardButton("♻️ ᴠᴇʀɪғʏ 🎭", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                     ],[
                         InlineKeyboardButton("🕵️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ❓", url=VERIFY_TUTORIAL)
-                    ],[InlineKeyboardButton("ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅs", callback_data="plan")
-                      ]]
+                    ]]
                           
                     text = "<b>ʜᴇʏ {} 👋, राधे राधे\n\nʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴠᴇʀɪғʏ & ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ᴛᴏᴅᴀʏ</b>"
                     if PREMIUM_AND_REFERAL_MODE == True:
@@ -578,8 +576,7 @@ async def start(client, message):
                 InlineKeyboardButton("♻️ ᴠᴇʀɪғʏ 🎭", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
             ],[
                 InlineKeyboardButton("🕵️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ❓", url=VERIFY_TUTORIAL)
-            ],[InlineKeyboardButton("ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅs", callback_data="plan")
-              ]]
+            ]]
                   
             text = "<b>ʜᴇʏ {} 👋, राधे राधे\n\nʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴠᴇʀɪғʏ & ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ᴛᴏᴅᴀʏ</b>"
             if PREMIUM_AND_REFERAL_MODE == True:
