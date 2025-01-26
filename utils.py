@@ -225,6 +225,21 @@ async def search_gagala(text):
 async def get_settings(group_id):
     settings = await db.get_settings(group_id)
     return settings
+
+#aading by amrit 
+
+def get_status():
+    tz = pytz.timezone('Asia/Colombo')
+    hour = datetime.now(tz).time().hour
+    if 5 <= hour < 12:
+        sts = "𝐺𝑜𝑜𝑑 𝑀𝑜𝑟𝑛𝑖𝑛𝑔"
+    elif 12 <= hour < 18:
+        sts = "𝐺𝑜𝑜𝑑 𝐴𝑓𝑡𝑒𝑟𝑛𝑜𝑜𝑛"
+    else:
+        sts = "𝐺𝑜𝑜𝑑 𝐸𝑣𝑒𝑛𝑖𝑛𝑔"
+    return sts
+
+
     
 async def save_group_settings(group_id, key, value):
     current = await get_settings(group_id)
