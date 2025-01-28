@@ -3,7 +3,7 @@
 # Ask Doubt on telegram @KingVJ01
 
 class script(object):
-    START_TXT = """<b> ʜᴇʟʟᴏ {} 👋, {} I am your ultimate movie and series assistant!🎬✨
+    START_TXT = """<b> ʜᴇʏ {}, {} /n/n I am your ultimate movie and series assistant!🎬✨
 
 I'm here to help you find and access your favorite movies or series instantly!🚀
     
