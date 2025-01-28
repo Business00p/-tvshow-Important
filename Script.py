@@ -3,8 +3,7 @@
 # Ask Doubt on telegram @KingVJ01
 
 class script(object):
-    START_TXT = """<b> ᴡᴇʟᴄᴏᴍᴇ {}, ɪ'ᴍ ʏᴏᴜʀ ᴜʟᴛɪᴍᴀᴛᴇ ᴍᴏᴠɪᴇ
-ʙᴜᴅᴅʏ!
+    START_TXT = """<b> ᴡᴇʟᴄᴏᴍᴇ {}, ɪ'ᴍ ʏᴏᴜʀ ᴜʟᴛɪᴍᴀᴛᴇ ᴍᴏᴠɪᴇ ʙᴜᴅᴅʏ!
 
 ʟᴇᴛ'ꜱ ꜰɪɴᴅ ʏᴏᴜʀ ꜰᴀᴠᴏʀɪᴛᴇ ᴍᴏᴠɪᴇ & ꜱᴇʀɪᴇꜱ ᴛᴏɢᴇᴛʜᴇʀ ɪɴꜱᴛᴀɴᴛʟʏ ! ! 🕵️\n\n<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/TvShOw076">×͜×𝐌𝐫.𝐀𝐦 </a></blockquote></b>"""
     
