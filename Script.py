@@ -3,10 +3,7 @@
 # Ask Doubt on telegram @KingVJ01
 
 class script(object):
-    START_TXT = """<b>Welcome {}, {}\n, your ultimate movie and series assistant!
-
-I'm here to help you find and access your favorite movies or series instantly! \n\n <blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/TvShOw076">×͜×𝐌𝐫.𝐀𝐦™ </a> </blockquote> </b>
-    """
+    START_TXT = """<b> Hello! {}, {} \nn\nI'm your personal movie bot. Ask me for any movie, Let's find your favorite movie together!🕵️\n \n<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/TvShOw076"> ×͜×𝐌𝐫.𝐀𝐦 </a></blockquote>  </b>""""
 
 
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
