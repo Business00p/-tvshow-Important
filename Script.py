@@ -3,9 +3,9 @@
 # Ask Doubt on telegram @KingVJ01
 
 class script(object):
-    START_TXT = """<b> <blockquote>ʜᴇʟʟᴏ {} 👋,</blockquote>
+    START_TXT = """<b> ʜᴇʟʟᴏ {} 👋, {}
     
-Welcome {} , I am your ultimate movie and series assistant!🎬✨/n/n I'm here to help you find and access your favorite movies or series instantly!🚀 </b>"""
+Welcome I am your ultimate movie and series assistant!🎬 \n\n I'm here to help you find and access your favorite movies or series instantly!🚀 </b>"""
     
 
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
