@@ -3,9 +3,9 @@
 # Ask Doubt on telegram @KingVJ01
 
 class script(object):
-    START_TXT = """<b> ʜᴇʏ {}, {} /n/n I am your ultimate movie and series assistant!🎬✨
-
-I'm here to help you find and access your favorite movies or series instantly!🚀
+    START_TXT = """<b> <blockquote>ʜᴇʟʟᴏ {} 👋,</blockquote>
+    
+    I am your ultimate movie and series assistant!🎬✨ /n I'm here to help you find and access your favorite movies or series instantly!🚀
     
 <blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/TvShOw076"> ×͜×𝐌𝐫.𝐀𝐦™ </a> </blockquote> </b>"""
     
