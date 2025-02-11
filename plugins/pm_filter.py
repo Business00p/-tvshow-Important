@@ -2081,7 +2081,7 @@ elif query.data == "admin":
       await client.edit_message_media(
           chat_id=query.message.chat.id,
           message_id=query.message.id,
-          media=InputMediaAnimation(
+          media=InputMediaPhoto(
             media="https://envs.sh/pZO.jpg",
             caption=script.ADMIN_TXT,
             parse_mode=enums.ParseMode.HTML
