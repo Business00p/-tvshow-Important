@@ -2068,8 +2068,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
 
 
-async def handle_callback(client, query):
-    if query.data == "admin":
+
+    elif query.data == "admin":
         # Get user status in the chat
         chat_member = await client.get_chat_member(query.message.chat.id, query.from_user.id)
         
