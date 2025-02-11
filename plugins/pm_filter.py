@@ -5,6 +5,7 @@
 import os, logging, string, asyncio, time, re, ast, random, math, pytz, pyrogram
 from datetime import datetime, timedelta, date, time
 from Script import script
+from pyrogram.enums import ChatMemberStatus
 from info import *
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto, ChatPermissions, WebAppInfo
 from pyrogram import Client, filters, enums
@@ -2067,26 +2068,30 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
 
 
-elif query.data == "admin":
-    # If the user isn't an admin, return
-      if query.from_user.id not in ADMINS:
-        return await query.answer('ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ꜰᴏʀ ʏᴏᴜ ʙʀᴏ!', show_alert=True)
-    elif query.data == "admin":
-      buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra')
-        ]]
-      reply_markup = InlineKeyboardMarkup(buttons)
-    
-      await client.edit_message_media(
-          chat_id=query.message.chat.id,
-          message_id=query.message.id,
-          media=InputMediaAnimation(
-            caption=script.ADMIN_TXT,
-            parse_mode=enums.ParseMode.HTML
-          ),
-          reply_markup=reply_markup
-    )
+async def handle_callback(client, query):
+    if query.data == "admin":
+        # Get user status in the chat
+        chat_member = await client.get_chat_member(query.message.chat.id, query.from_user.id)
+        
+        # Check if the user is an admin
+        if chat_member.status in [ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.OWNER]:
+            buttons = [[
+                InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
+                InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra')
+            ]]
+            await client.edit_message_media(
+                query.message.chat.id, 
+                query.message.id, 
+                InputMediaPhoto(random.choice(PICS))
+            )
+            reply_markup = InlineKeyboardMarkup(buttons)
+            await query.message.edit_text(
+                text=script.ADMIN_TXT,
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+            )
+        else:
+            await query.answer("You are not an admin!", show_alert=True)
 
 
 
