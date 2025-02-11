@@ -10,7 +10,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /Important-
-WORKDIR /Important-
-COPY . /Important-
+RUN mkdir /-tvshow-Important
+WORKDIR /-tvshow-Important
+COPY . /-tvshow-Important
 CMD ["python", "bot.py"]
