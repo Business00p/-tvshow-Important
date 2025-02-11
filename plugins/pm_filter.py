@@ -2068,27 +2068,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
 
 elif query.data == "admin":
-    # If the user isn't an admin, return
-      if query.from_user.id not in ADMINS:
-        return await query.answer('ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ꜰᴏʀ ʏᴏᴜ ʙʀᴏ!', show_alert=True)
-    
-      buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra')
-        ]]
-      reply_markup = InlineKeyboardMarkup(buttons)
-    
-      await client.edit_message_media(
-          chat_id=query.message.chat.id,
-          message_id=query.message.id,
-          media=InputMediaPhoto(
-            media="https://envs.sh/pZO.jpg",
-            caption=script.ADMIN_TXT,
-            parse_mode=enums.ParseMode.HTML
-          ),
-          reply_markup=reply_markup
-      )
-
+    # If the user isn't an admin, return
+      if query.from_user.id not in ADMINS:
+        return await query.answer('ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ꜰᴏʀ ʏᴏᴜ ʙʀᴏ!', show_alert=True)
+    elif query.data == "admin":
+      buttons = [[
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra')
+        ]]
+      reply_markup = InlineKeyboardMarkup(buttons)
+    
+      await client.edit_message_media(
+          chat_id=query.message.chat.id,
+          message_id=query.message.id,
+          media=InputMediaAnimation(
+            caption=script.ADMIN_TXT,
+            parse_mode=enums.ParseMode.HTML
+          ),
+          reply_markup=reply_markup
+    )
 
 
 
@@ -2102,7 +2100,26 @@ elif query.data == "admin":
 
 	
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
     elif query.data == "store_file":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help')
