@@ -5,7 +5,6 @@
 import os, logging, string, asyncio, time, re, ast, random, math, pytz, pyrogram
 from datetime import datetime, timedelta, date, time
 from Script import script
-from pyrogram.enums import ChatMemberStatus
 from info import *
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto, ChatPermissions, WebAppInfo
 from pyrogram import Client, filters, enums
@@ -2070,56 +2069,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
 
     elif query.data == "admin":
-        # Get user status in the chat
-        chat_member = await client.get_chat_member(query.message.chat.id, query.from_user.id)
-        
-        # Check if the user is an admin
-        if chat_member.status in [ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.OWNER]:
-            buttons = [[
-                InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
-                InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra')
-            ]]
-            await client.edit_message_media(
-                query.message.chat.id, 
-                query.message.id, 
-                InputMediaPhoto(random.choice(PICS))
-            )
-            reply_markup = InlineKeyboardMarkup(buttons)
-            await query.message.edit_text(
-                text=script.ADMIN_TXT,
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML
-            )
-        else:
-            await query.answer("You are not an admin!", show_alert=True)
-
-
-
-
-
-
-
-
-	
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        buttons = [[
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra')
+        ]]
+        await client.edit_message_media(
+                 query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.ADMIN_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+           
+	)
 
 
 
@@ -2857,6 +2822,7 @@ async def advantage_spell_chok(client, name, msg, reply_msg, vj_search):
     if AI_SPELL_CHECK == True and vj_search == True:
         vj_search_new = False
         vj_ai_msg = await reply_msg.edit_text("<b><i>I Am Trying To Find Your Movie With Your Wrong Spelling.</i></b>")
+	    await asyncio.sleep(2)
         movienamelist = []
         movienamelist += [movie.get('title') for movie in movies]
         for techvj in movienamelist:
