@@ -2068,21 +2068,37 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
 
 elif query.data == "admin":
-        buttons = [[
+    # If the user isn't an admin, return
+      if query.from_user.id not in ADMINS:
+        return await query.answer('ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ꜰᴏʀ ʏᴏᴜ ʙʀᴏ!', show_alert=True)
+    
+      buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra')
         ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.ADMIN_TXT,
-            reply_markup=reply_markup,
+      reply_markup = InlineKeyboardMarkup(buttons)
+    
+      await client.edit_message_media(
+          chat_id=query.message.chat.id,
+          message_id=query.message.id,
+          media=InputMediaAnimation(
+            media="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Video.mp4/Welcome_video_20240921_184741_0001.gif",
+            caption=script.ADMIN_TXT,
             parse_mode=enums.ParseMode.HTML
-           )
+          ),
+          reply_markup=reply_markup
+      )
+
+
+
+
+
+
+
+
+
+
+	
 
 	
     elif query.data == "store_file":
