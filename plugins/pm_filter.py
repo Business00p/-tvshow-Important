@@ -2088,18 +2088,6 @@ elif query.data == "admin":
           ),
           reply_markup=reply_markup
       )
-
-
-
-
-
-
-
-
-
-
-	
-
 	
     elif query.data == "store_file":
         buttons = [[
@@ -2149,21 +2137,25 @@ elif query.data == "admin":
             parse_mode=enums.ParseMode.HTML
         )
     
-    elif query.data == "extra":
-        buttons = [[
+
+elif query.data == "extra":
+       buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='admin')
         ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.EXTRAMOD_TXT.format(OWNER_LNK, CHNL_LNK),
-            reply_markup=reply_markup,
+       reply_markup = InlineKeyboardMarkup(buttons)
+    
+       await client.edit_message_media(
+          chat_id=query.message.chat.id,
+          message_id=query.message.id,
+          media=InputMediaAnimation(
+            media="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Video.mp4/Welcome_video_20240921_184741_0001.gif",
+            caption=script.EXTRAMOD_TXT.format,
             parse_mode=enums.ParseMode.HTML
-        )
+          ),
+          reply_markup=reply_markup
+       )
+
+
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
