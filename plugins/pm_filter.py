@@ -2082,8 +2082,7 @@ elif query.data == "admin":
             text=script.ADMIN_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-           
-	)
+           )
 
 	
     elif query.data == "store_file":
